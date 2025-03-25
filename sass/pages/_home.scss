@@ -1,0 +1,63 @@
+@use '../abstracts/abstracts' as *;
+
+.page-home {
+
+
+    .main {
+        &__intro {
+            @include flex-column-center();
+            margin-bottom: $mb-1;
+    
+            &-img {
+                border-radius: 10px;
+                @include boxshadow-img();
+            }
+        }
+
+        &__discover{
+            margin-bottom: 20px;
+
+            &-title {
+                @include background-heading();
+            }
+        }
+
+        &__specializations {
+            margin-bottom: $mb-1;
+
+            &-items {
+                @include flex-column-center();
+                margin-bottom: 20px;
+            }
+
+            &-subtitle {
+                @include background-heading();
+            }
+
+            &-text {
+                transition-duration: 1s;
+            }
+            
+            figure {
+                .img {
+                    max-width: 300px;
+                    max-height: 190px;
+                    border-radius: 10px;
+                    @include boxshadow-img();
+                }
+            }
+        }
+
+        &__news {
+            margin-bottom: $mb-1;
+
+            &-title {
+                @include background-heading();
+            }
+
+            &-text {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

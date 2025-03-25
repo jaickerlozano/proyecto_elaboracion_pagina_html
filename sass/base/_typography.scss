@@ -1,0 +1,57 @@
+@use '../abstracts/abstracts' as *;
+
+h1, h2, h3, h4 {
+    color: $dark-blue;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+h1 {
+    @include styles(700, 34px, 32px, -1.14px);
+}
+
+h2 {
+    @include styles(700, 24px, 30px, -1px);
+}
+
+h3 {
+    @include styles(700, 20px, 26px, 0px);
+}
+
+p {
+    @include styles(500, 16px, 26px, 0px);
+    color: $grey;
+    margin-bottom: 20px;
+}
+
+// Media query tablet
+/*
+@include breakpoint(tablet) {
+    h1 {
+        @include styles(700, 32px, 32px, -0.44px);
+    }
+    
+    h2 {
+        @include styles(700, 72px, 72px, -2.05px);
+    }
+    
+    h3 {
+        @include styles(700, 24px, 32px, 0px);
+    }
+    
+    h4 {
+        @include styles(700, 48px, 56px, -1.5px);
+    }
+    
+    p {
+        @include styles(500, 18px, 28px, 0px);
+        color: $light-grey;
+    }
+}
+
+// Media query desktop
+@include breakpoint(desktop) {
+    h2 {
+        @include styles(700, 88px, 88px, -2.5px);
+    }
+}*/

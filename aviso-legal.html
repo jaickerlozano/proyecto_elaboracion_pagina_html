@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <!-- Descripción de la página para los buscadores -->
-  <meta name="description" content="">
+  <meta name="description" content="Aviso Legal">
   <!-- Para que la web sea responsive -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Palabras clave para los buscadores -->
@@ -12,19 +12,14 @@
   <!-- Autor de la página -->
   <meta name="author" content="@jaickerlozano">
   <!-- Título del proyecto-->
-  <title>Proyecto de HTML</title>
+  <title>Aviso legal</title>
 
   <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
-
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -46,11 +41,13 @@
 </head>
 
 <body>
-    <header>
+
+    <header class="header">
       <figure>
-        <img src="img/logo-conquerblocks-color.png" alt="Logotipo de Conquer Blocks" width="200" height="40">
+        <a class="header__logo" href="./index.html"><img src="img/logo-conquerblocks-color.png" alt="Logotipo de Conquer Blocks" width="200" height="40"></a>
       </figure>
-      <nav>
+
+      <nav class="header__nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="quienes-somos.html">Quiénes somos</a></li>
@@ -58,10 +55,9 @@
           <li><a href="blog.html">Blog</a></li>
           <li><a href="registro.html">Registro</a></li>
           <li><a href="login.html">Login</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a class="active" href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
-      <hr />
     </header>
     
     <main>
@@ -77,7 +73,9 @@
     <footer>
       <p>© 2024 - Todos los derechos reservados - <a href="aviso-legal.html">Aviso Legal</a></p>
     </footer>
-  
+    
+    <script type="module" src="/main.js"></script>
+
 </body>
 
 </html>

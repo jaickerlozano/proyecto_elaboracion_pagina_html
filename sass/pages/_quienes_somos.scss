@@ -1,0 +1,19 @@
+@use '../abstracts/abstracts' as *;
+
+.page-quienes-somos {
+
+    .main {
+        &__about {
+            margin-bottom: $mb-1;
+
+            &-figure {
+                width: 100%;
+            }
+
+            &-img {
+                width: 100%;
+            }
+        }
+
+    }
+}

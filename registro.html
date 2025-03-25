@@ -19,12 +19,7 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
-
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -43,25 +38,27 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+
 </head>
 
 <body>
-    <header>
+
+    <header class="header">
       <figure>
-        <img src="img/logo-conquerblocks-color.png" alt="Logotipo de Conquer Blocks" width="200" height="40">
+        <a class="header__logo" href="./index.html"><img src="img/logo-conquerblocks-color.png" alt="Logotipo de Conquer Blocks" width="200" height="40"></a>
       </figure>
-      <nav>
+
+      <nav class="header__nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="quienes-somos.html">Quiénes somos</a></li>
           <li><a href="cursos.html">Cursos</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li>Registro</li>
+          <li><a class="active" href="registro.html">Registro</a></li>
           <li><a href="login.html">Login</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
-      <hr />
     </header>
     
     <main>
@@ -105,10 +102,13 @@
       </form>
     </main>
 
-    <footer>
-      <p>© 2024 - Todos los derechos reservados - <a href="aviso-legal.html">Aviso Legal</a></p>
+    <footer class="footer">
+      <p class="footer__copyright">© 2024 - Todos los derechos reservados</p>
+      <nav class="footer__nav">
+        <a class="footer__link" href="aviso-legal.html">Aviso legal</a>
+      </nav>
     </footer>
-  
+    <script type="module" src="/main.js"></script>
 </body>
 
 </html>
