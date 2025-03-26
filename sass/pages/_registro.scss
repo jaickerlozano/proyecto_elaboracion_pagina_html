@@ -1,0 +1,75 @@
+@use '../abstracts/abstracts' as *;
+
+.page-registro {
+    .title {
+        text-align: center;
+    }
+
+    .form {
+        font-weight: 600;
+        color: $dark-blue;
+
+        &__intro {
+            text-align: center;
+        }
+
+        &__fieldset {
+            padding: 20px;
+            background-color: $light-grey;
+            border: none;
+        }
+
+        &__legend {
+            font-size: 18px;
+        }
+
+        &__group {
+            margin-bottom: $mb-2;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__label{
+            margin-bottom: 5px;
+        }
+
+        &__input {
+            border: 0;
+            border-bottom: 1px solid $dark-grey;
+            background-color: $light-grey;
+            color: $grey;
+            font-weight: 600;
+        }
+
+        &__file {
+            
+        }
+
+        &__textarea {
+                        border: 0;
+            border-bottom: 1px solid $dark-grey;
+            background-color: $light-grey;
+            color: $dark-grey;
+            font-weight: 600;
+        }
+
+        &__button {
+
+            &--container {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            &--submit, &--reset {
+                background-color: $dark-blue;
+                color: $white;
+                padding: 10px 16px;
+                border: none;
+                border-radius: 10px;
+                &:hover {
+                    background-color: #666CA3;
+                }
+            }
+        }
+    }
+}
