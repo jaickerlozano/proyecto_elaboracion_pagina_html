@@ -69,6 +69,17 @@
   }
 }
 
+@mixin button-submit-reset() {
+  background-color: var.$dark-blue;
+  color: var.$white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  &:hover {
+      background-color: #666CA3;
+  }
+}
+
 @mixin background-heading() {
   padding: 10px 16px;
   border-radius: 16px;
@@ -79,3 +90,4 @@
   box-shadow: 1px 1px 50px var.$dark-blue;
   margin-bottom: 10px;
 }
+

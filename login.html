@@ -40,7 +40,7 @@
 
 </head>
 
-<body>
+<body class="page-login">
 
     <header class="header">
       <figure>
@@ -49,34 +49,34 @@
 
       <nav class="header__nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="quienes-somos.html">Quiénes somos</a></li>
-          <li><a href="cursos.html">Cursos</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="registro.html">Registro</a></li>
-          <li><a class="active" href="login.html">Login</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li class="header__item"><a href="index.html">Home</a></li>
+          <li class="header__item"><a href="quienes-somos.html">Quiénes somos</a></li>
+          <li class="header__item"><a href="cursos.html">Cursos</a></li>
+          <li class="header__item"><a href="blog.html">Blog</a></li>
+          <li class="header__item"><a href="registro.html">Registro</a></li>
+          <li class="header__item"><a class="active" href="login.html">Login</a></li>
+          <li class="header__item"><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
     
-    <main>
-      <h1>Inicio de sesión</h1>
-      <form action="#" method="post" name="login" enctype="multipart/form-data">
-        <p>
-          <label for="user">Ingrese su Email</label>
-          <input type="email" name="user" id="user" placeholder="example@gmail.com" max="30" maxlength="35" required>
-        </p>
+    <main class="main">
+      <h1 class="title">Inicio de sesión</h1>
+      <form class="form" action="#" method="post" name="login" enctype="multipart/form-data">
+        <div class="form__group">
+          <label class="form__label" for="user">Ingrese su Email</label>
+          <input class="form__input form__input--mail" type="email" name="user" id="user" placeholder="example@gmail.com" max="30" maxlength="35" required>
+        </div>
 
-        <p>
-          <label for="password">Contraseña</label>
-          <input type="password" name="password" id="password" max="20" required>
-        </p>
+        <div class="form__group">
+          <label class="form__label" for="password">Contraseña</label>
+          <input class="form__input form__input--password" type="password" name="password" id="password" max="20" required>
+        </div>
 
-        <p>
-          <button>Enviar</button>
-          <input type="reset" value="Borrar formulario">
-        </p>
+        <div class="form__button--container">
+          <button class="form__button form__button--submit" type="submit">Iniciar sesión</button>
+          <button class="form__button form__button--reset" type="reset">Borrar formulario</button>
+        </div>
       </form>
     </main>
 
