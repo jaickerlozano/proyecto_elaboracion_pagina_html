@@ -11,3 +11,12 @@
     color: $dark-blue;
     text-transform: uppercase;
 }
+
+.btn-noticias {
+    @include button-cursos();
+    background-color: $yellow;
+    border: 3px solid #d2df5a;
+    &:hover {
+        border: 3px solid $dark-blue;
+    }
+}

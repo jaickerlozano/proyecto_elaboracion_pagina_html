@@ -40,7 +40,7 @@
   
 </head>
 
-<body>
+<body class="page-blog">
 
     <header class="header">
       <figure>
@@ -49,53 +49,50 @@
 
       <nav class="header__nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="quienes-somos.html">Quiénes somos</a></li>
-          <li><a href="cursos.html">Cursos</a></li>
-          <li><a class="active" href="blog.html">Blog</a></li>
-          <li><a href="registro.html">Registro</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li class="header__item"><a href="index.html">Home</a></li>
+          <li class="header__item"><a href="quienes-somos.html">Quiénes somos</a></li>
+          <li class="header__item"><a href="cursos.html">Cursos</a></li>
+          <li class="header__item"><a class="active" href="blog.html">Blog</a></li>
+          <li class="header__item"><a href="registro.html">Registro</a></li>
+          <li class="header__item"><a href="login.html">Login</a></li>
+          <li class="header__item"><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
     
-    <main>
-      <section>
-        <h1>Noticias en el mundo del Desarrollo Full Stack</h1>
-        <p>En nuestro blog podrás estar enterado de las últimas noticias en el mundo del desarrollo Web Full Stack</p>
+    <main class="main">
+      <section class="main__intro">
+        <h1 class="main__title">Noticias en el mundo del Desarrollo Full Stack</h1>
+        <p class="main__subtitle">En nuestro blog podrás estar enterado de las últimas noticias en el mundo del desarrollo Web Full Stack</p>
       </section>
 
-      <section>
-        <article>
-          <h2>Por qué el Desarrollo Full Stack es un trabajo de alta demanda en la actualidad</h2>
-          <p>A medida que la tecnología se expande y evoluciona rápidamente, muchas empresas buscan desarrolladores 
-            con talento que sean capaces de comprender y trabajar tanto en el front-end como en el back-end, dominando 
-            cualquier aspecto del proceso de desarrollo y creando un producto final completo... </p>
-          <p>
-            <a href="blog/desa-full-stack-trabajo-alta-demanda.html">Ver noticia</a>.
-          </p>
+      <section class="main__articles">
+        <article class="article-card">
+          <h2 class="article-card__title">Por qué el Desarrollo Full Stack es un trabajo de alta demanda en la actualidad</h2>
+          <div class="article-card__content">
+            <p class="article-card__excerpt">A medida que la tecnología se expande y evoluciona rápidamente, muchas empresas buscan desarrolladores 
+              con talento que sean capaces de comprender y trabajar tanto en el front-end como en el back-end...</p>
+            <a class="article-card__link btn-noticias" href="blog/desa-full-stack-trabajo-alta-demanda.html">Ver noticia</a>
+          </div>
         </article>
 
-        <article>
-          <h2>La carrera tecnológica de 12 meses con sueldos de hasta €30.000.</h2>
-          <p>El avance de la tecnología digital está cambiando el perfil de los profesionales que las empresas requieren, 
-            abriendo nuevas oportunidades laborales a plazas con remuneraciones atractivas, como la de Desarrolladores 
-            Full Stack, es decir aquel que domina todas las etapas del desarrollo de software... 
-            Pulse <a href="blog/noticia-sueldos.html">aquí</a> para continuar leyendo la noticia.
-          </p>
-          <a href="blog/noticia-sueldos.html">Ver noticia</a>.
+        <article class="article-card">
+          <h2 class="article-card__title">La carrera tecnológica de 12 meses con sueldos de hasta €30.000.</h2>
+          <div class="article-card__content">
+            <p class="article-card__excerpt">El avance de la tecnología digital está cambiando el perfil de los profesionales que las empresas requieren, 
+              abriendo nuevas oportunidades laborales a plazas con remuneraciones atractivas...</p>
+            <a class="article-card__link btn-noticias" href="blog/noticia-sueldos.html">Ver noticia</a>
+          </div>
         </article>
       </section>
 
-      <div>
-        <iframe 
+      <div class="main__video-container">
+        <iframe class="main__video" 
           width="560" 
           height="315" 
           src="https://www.youtube.com/embed/HeBYGt2Lo_A?si=ZxXJAtazC3PEguP2" 
           title="YouTube video player" 
           frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
           allowfullscreen>
         </iframe>
       </div>
