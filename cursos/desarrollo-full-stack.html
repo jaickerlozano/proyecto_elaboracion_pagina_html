@@ -41,50 +41,68 @@
   
 </head>
 
-<body>
-    <header>
+<body class="page-desarrollo-full-stack">
+
+    <header class="header">
       <figure>
-        <img src="../img/logo-conquerblocks-color.png" alt="Logotipo de Conquer Blocks" width="200" height="40">
+        <a class="header__logo" href="./index.html"><img src="../img/logo-conquerblocks-color.png" alt="Logotipo de Conquer Blocks" width="200" height="40"></a>
       </figure>
-      <nav>
+
+      <nav class="header__nav">
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../quienes-somos.html">Quiénes somos</a></li>
-          <li><a href="../cursos.html">Cursos</a></li>
-          <li><a href="../blog.html">Blog</a></li>
-          <li><a href="../registro.html">Registro</a></li>
-          <li><a href="../login.html">Login</a></li>
-          <li><a href="../contacto.html">Contacto</a></li>
+          <li class="header__item"><a href="../index.html">Home</a></li>
+          <li class="header__item"><a href="../quienes-somos.html">Quiénes somos</a></li>
+          <li class="header__item"><a href="../cursos.html">Cursos</a></li>
+          <li class="header__item"><a href="../blog.html">Blog</a></li>
+          <li class="header__item"><a href="../registro.html">Registro</a></li>
+          <li class="header__item"><a href="../login.html">Login</a></li>
+          <li class="header__item"><a href="../contacto.html">Contacto</a></li>
         </ul>
       </nav>
-      <hr />
     </header>
     
-    <main>
-      <h1>Máster en Desarrollo Full Stack</h1>
-      <p>
-        Con el Máster en Desarrollo Full Stack podrás:
+    <main class="main">
+      <article class="course-hero">
+        <h1 class="course-hero__title">Máster en Desarrollo Full Stack</h1>
+        <p class="course-hero__intro">
+          Con el Máster en Desarrollo Full Stack podrás:
+        </p>
         
-        <ul>
-          <li>Aprender a programar desde 0 gracias a un sistema de enseñanza pensado para que cualquier persona pueda aprender.</li>
-          <li>En tan solo 12 meses de estudio podrás conseguir tu primer trabajo con nuestra bolsa de trabajo.</li>
-          <li>Aprender con un sistema de enseñanza enfocado al mundo laboral.</li>
-          <li>Disponer de todas las clases y temario de nuestro máster para que practiques cuando desees.</li>
+        <ul class="course-features">
+          <li class="course-features__item">
+            Aprender a programar desde 0 gracias a un sistema de enseñanza pensado para que cualquier persona pueda aprender.
+          </li>
+          <li class="course-features__item">
+            En tan solo 12 meses de estudio podrás conseguir tu primer trabajo con nuestra bolsa de trabajo.
+          </li>
+          <li class="course-features__item">
+            Aprender con un sistema de enseñanza enfocado al mundo laboral.
+          </li>
+          <li class="course-features__item">
+            Disponer de todas las clases y temario de nuestro máster para que practiques cuando desees.
+          </li>
         </ul>
-      </p>
+      </article>
 
-      <iframe 
-        width="560" 
-        height="315" 
-        src="https://www.youtube.com/embed/uR9IndQndjY?si=0qk0DeQXAZazwX_f" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen>        
-      </iframe>
+      <section class="course-video">
+        <div class="course-video__container">
+          <iframe class="course-video__iframe" 
+                  src="https://www.youtube.com/embed/uR9IndQndjY?si=0qk0DeQXAZazwX_f" 
+                  title="YouTube video player" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </section>
 
-      <p><a target="_blank" href="https://calendly.com/d/yr6-m6b-srg">Agenda tu llamada</a></p>
-
+      <section class="course-cta">
+        <a class="course-cta__link" href="https://calendly.com/d/yr6-m6b-srg" target="_blank">
+          <svg class="course-cta__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z" fill="currentColor"/>
+          </svg>
+          Agenda tu llamada
+        </a>
+      </section>
     </main>
     
     <footer class="footer">

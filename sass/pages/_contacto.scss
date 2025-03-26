@@ -1,0 +1,110 @@
+@use '../abstracts/abstracts' as *;
+
+.page-contacto {
+    .main {
+
+        &__title, &__intro {
+            text-align: center;
+        }
+    
+        &__contact-container {
+          @include flex-column-center;
+        }
+    }
+      
+    .contact-form {
+        width: 100%;
+        margin-bottom: $mb-1;
+        .form {
+            font-weight: 600;
+            color: $dark-blue;
+    
+            &__fieldset {
+                padding: 20px;
+                background-color: $light-grey;
+                border: none;
+                border-radius: $br-1;
+            }
+            
+            &__legend {
+                font-size: 18px;
+            }
+    
+            &__group {
+                margin-bottom: $mb-2;
+                display: flex;
+                flex-direction: column;
+            }
+    
+            &__label{
+                margin-bottom: 5px;
+            }
+    
+            &__input {
+                border: 0;
+                border-bottom: 1px solid $dark-grey;
+                background-color: $light-grey;
+                color: $grey;
+                font-weight: 600;
+            }
+            
+            &__textarea {
+                border: 0;
+                border-bottom: 1px solid $dark-grey;
+                background-color: $light-grey;
+                color: $dark-grey;
+                font-weight: 600;
+            }
+    
+            &__button {
+    
+                &--container {
+                    display: flex;
+                    justify-content: space-around;
+                }
+    
+                &--submit, &--reset {
+                    @include button-submit-reset();
+                }
+            }
+        }
+    }
+    
+    .contact-map {
+        &__container {
+          position: relative;
+          padding-bottom: 75%; // Relación de aspecto 4:3
+          height: 0;
+          overflow: hidden;
+          border-radius: $br-1;
+          margin-bottom: $mb-2;
+        }
+        
+        &__iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+    }
+
+    .contact-info {
+        &__item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1rem;
+        }
+        
+        &__icon {
+          margin-right: 1rem;
+          fill: $dark-blue;
+        }
+        
+        &__text {
+          margin: 0;
+        }
+    }
+
+}

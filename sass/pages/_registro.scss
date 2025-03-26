@@ -17,6 +17,7 @@
             padding: 20px;
             background-color: $light-grey;
             border: none;
+            border-radius: $br-1;
         }
 
         &__legend {
@@ -41,12 +42,8 @@
             font-weight: 600;
         }
 
-        &__file {
-            
-        }
-
         &__textarea {
-                        border: 0;
+            border: 0;
             border-bottom: 1px solid $dark-grey;
             background-color: $light-grey;
             color: $dark-grey;

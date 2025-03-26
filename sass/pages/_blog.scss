@@ -16,12 +16,21 @@
         }
 
         &__video-container {
+            position: relative;
             width: 100%;
-        }
+            padding-bottom: 56.25%; /* Relación 16:9 (9/16 = 0.5625) */
+            height: 0;
+            overflow: hidden;
+            border-radius: $br-1;
+          }
+          
         &__video {
-            max-width: 100%;
-            height: 220px;
-            border-radius: 10px;
-        }
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none; /* Opcional: elimina borde por defecto */
+          }
     }
 }
