@@ -15,7 +15,7 @@
         }
 
         &__discover{
-            margin-bottom: 20px;
+            margin-bottom: $mb-2;
 
             &-title {
                 @include background-heading();
@@ -27,7 +27,7 @@
 
             &-items {
                 @include flex-column-center();
-                margin-bottom: 20px;
+                margin-bottom: $mb-2;
             }
 
             &-subtitle {
@@ -56,7 +56,7 @@
             }
 
             &-text {
-                margin-bottom: 20px;
+                margin-bottom: $mb-2;
             }
         }
     }

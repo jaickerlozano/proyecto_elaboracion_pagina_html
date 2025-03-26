@@ -1,0 +1,13 @@
+@use '../abstracts/abstracts' as *;
+
+// Buttons
+
+.btn-cursos {
+    @include button-cursos();
+}
+
+.link {
+    @include link();
+    color: $dark-blue;
+    text-transform: uppercase;
+}

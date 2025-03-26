@@ -1,0 +1,72 @@
+@use '../abstracts/abstracts' as *;
+
+.page-cursos {
+
+    .main {
+        &__intro {
+            margin-bottom: $mb-1;
+        }
+
+        &__course-list {
+            list-style-position: inside; // Posiciona la lista dentro del marco
+
+            &-item {
+                margin-bottom: 10px;
+            }
+            
+            &-item::marker {
+                font-family: 'icomoon'; // Fuente de la iconografía
+                color: #6d26a0;
+                content: "\e900"; // Código de la iconografía
+            }
+            &-item::before {
+                content: '';
+                margin: 3px;
+            }
+        }
+
+        &__courses-grid {
+            .course-card {
+                margin-bottom: 40px;
+                background-color: $light-white;
+                border-radius: 10px;
+                padding: 16px;
+                &:hover .icon {
+                    transform: scale(1.1);
+                }
+
+                &__icon {
+                    width: 48px;
+                    height: 48px;
+                    margin-bottom: 1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .icon {
+                    width: 100%;
+                    height: 100%;
+                    fill: currentColor; /* Hereda el color del texto */
+                    transition: all 0.3s ease;
+                }
+                  
+                  /* Colores específicos para cada tipo de curso */
+                .icon--fullstack {
+                    color: #9C27B0; /* Púrpura fullstack */
+                }
+                  
+                .icon--blockchain {
+                    color: #4CAF50; /* Verde blockchain */
+                }
+
+                .icon--ai {
+                    color: #3F51B5; /* Azul IA */
+                }
+                  
+                .icon--cybersecurity {
+                  color: #FF5722; /* Naranja seguridad */
+                }
+            }
+        }
+    }
+}
