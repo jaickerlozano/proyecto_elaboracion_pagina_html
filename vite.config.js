@@ -18,7 +18,7 @@ export default defineConfig({
         ia: resolve(__dirname, './cursos/inteligencia-artificial.html'),
         ciberseguridad: resolve(__dirname, './cursos/ciberseguridad.html'),
         noticia1: resolve(__dirname, './blog/noticia-1.html'),
-        ciberseguridad: resolve(__dirname, './blog/noticia-2.html'), // Otras páginas
+        noticia2: resolve(__dirname, './blog/noticia-2.html'), // Otras páginas
       },
     },
   }, 
