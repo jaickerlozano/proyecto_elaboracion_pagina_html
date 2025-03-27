@@ -1,0 +1,126 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+    <!-- Descripción de la página para los buscadores -->
+  <meta name="description" content="Formulario de registro Conquer Blocks">
+    <!-- Para que la web sea responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Palabras clave para los buscadores -->
+  <meta name="keywords" content="Desarrollo Full Stack, Cursos, Blog, Resgistros, Quiénes Somos, tecnologías, Inteligencia Artificial">
+    <!-- Autor de la página -->
+  <meta name="author" content="@jaickerlozano">
+    <!-- Título del proyecto-->
+  <title>Registro - Academia Conquer Blocks</title>
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="./assets/site-BxrbV1h7.webmanifest">
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/apple-icon-57x57-BFaJtfyV.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/apple-icon-60x60-C8pxNW-f.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/apple-icon-72x72-6dYcfnn1.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/apple-icon-76x76-D0hKM2NH.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/apple-icon-114x114-BJ9v8XR9.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/apple-icon-120x120-7WqfD-Zn.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/ms-icon-144x144-IY_wya6O.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/apple-icon-152x152-BUPDMDyN.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180-sHb_daT1.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./assets/android-icon-192x192-CT72Zo1a.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32-1FtHTGBj.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon-96x96-EbcUD-SF.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16-C4xS6SIH.png">
+  <link rel="manifest" href="./assets/manifest-CO0q9IVi.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./assets/ms-icon-144x144-IY_wya6O.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <script type="module" crossorigin src="./assets/main-Bb_bf04C.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-BLXqxgyx.css">
+</head>
+
+<body class="page-registro">
+
+    <header class="header">
+      <figure>
+        <a class="header__logo" href="./index.html"><img src="./assets/logo-conquerblocks-color-eWjKbj44.png" alt="Logotipo de Conquer Blocks" width="200" height="40"></a>
+      </figure>
+
+      <nav class="header__nav">
+        <ul>
+          <li class="header__item"><a href="index.html">Home</a></li>
+          <li class="header__item"><a href="quienes-somos.html">Quiénes somos</a></li>
+          <li class="header__item"><a href="cursos.html">Cursos</a></li>
+          <li class="header__item"><a href="blog.html">Blog</a></li>
+          <li class="header__item"><a class="active" href="registro.html">Registro</a></li>
+          <li class="header__item"><a href="login.html">Login</a></li>
+          <li class="header__item"><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="main">
+      <h1 class="title">Formulario de Registro</h1>
+      <form class="form" action="#" method="post" name="Registro" enctype="multipart/form-data">
+        <p class="form__intro">Completa el siguiente formulario de registro para acceder a nuestro contenido.</p>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Datos Personales</legend>
+
+          <div class="form__group">
+            <label class="form__label" for="name">Nombre Completo</label>
+            <input class="form__input" type="text" name="name" id="name" maxlength="30" 
+            placeholder="Ejemplo: César Augusto Contreras Leal" size="30" required>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="birthday">Fecha de nacimiento</label>
+            <input class="form__input" type="date" name="birthday" id="birthday" required>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="email">Correo electrónico</label>
+            <input class="form__input" type="email" name="email" id="email" placeholder="example@gmail.com" max="30" maxlength="35" required>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="address">Dirección</label>
+            <input class="form__input" type="text" name="address" id="address" required>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="webpage">Página Web</label>
+            <input class="form__input" type="text" name="webpage" id="webpage">
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="photo">Foto</label>
+            <input class="form__file" type="file" src="" name="photo" id="photo" accept="image/*">
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="bio">Biografía</label><br>
+            <textarea class="form__textarea" name="bio" id="bio" placeholder="Ingresa una breve biografía" cols="30" rows="5"></textarea>
+          </div>
+
+          <div class="form__button form__button--container">
+            <button class="form__button form__button--submit" type="submit">Enviar</button>
+            <button class="form__button form__button--reset" type="reset">Borrar formulario</button>            
+          </div>
+
+        </fieldset>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">© 2024 - Todos los derechos reservados</p>
+      <nav class="footer__nav">
+        <a class="footer__link" href="aviso-legal.html">Aviso legal</a>
+      </nav>
+    </footer>
+</body>
+
+</html>

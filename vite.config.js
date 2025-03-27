@@ -7,7 +7,18 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'), // Página principal
-        location: resolve(__dirname, 'location.html'), // Otras páginas
+        quienessomos: resolve(__dirname, 'quienes-somos.html'),
+        cursos: resolve(__dirname, 'cursos.html'),
+        blog: resolve(__dirname, 'blog.html'),
+        registro: resolve(__dirname, 'registro.html'),
+        login: resolve(__dirname, 'login.html'),
+        contacto: resolve(__dirname, 'contacto.html'),
+        fullstack: resolve(__dirname, './cursos/desarrollo-full-stack.html'),
+        blockchain: resolve(__dirname, './cursos/blockchain.html'),
+        ia: resolve(__dirname, './cursos/inteligencia-artificial.html'),
+        ciberseguridad: resolve(__dirname, './cursos/ciberseguridad.html'),
+        noticia1: resolve(__dirname, './blog/noticia-1.html'),
+        ciberseguridad: resolve(__dirname, './blog/noticia-2.html'), // Otras páginas
       },
     },
   }, 
