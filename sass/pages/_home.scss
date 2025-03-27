@@ -4,10 +4,19 @@
 
 
     .main {
+
+        &-text {
+            padding: 0 16px;
+        }
+
         &__intro {
             @include flex-column-center();
             margin-bottom: $mb-1;
-    
+            
+            &-title, &-text {
+                text-align: center;
+            }
+
             &-img {
                 border-radius: 10px;
                 @include boxshadow-img();

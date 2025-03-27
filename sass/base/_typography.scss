@@ -7,11 +7,11 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    @include styles(700, 34px, 32px, -1.14px);
+    @include styles(700, 22px, 26px, -1.14px);
 }
 
 h2 {
-    @include styles(700, 24px, 30px, -1px);
+    @include styles(700, 23px, 28px, -1px);
 }
 
 h3 {
@@ -19,7 +19,7 @@ h3 {
 }
 
 p {
-    @include styles(500, 16px, 26px, 0px);
+    @include styles(500, 16px, 20px, 0px);
     color: $grey;
     margin-bottom: 20px;
 }

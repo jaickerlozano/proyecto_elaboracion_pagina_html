@@ -41,7 +41,7 @@
   
 </head>
 
-<body>
+<body class="page-ia">
 
     <header class="header">
       <figure>
@@ -62,30 +62,40 @@
       <hr />
     </header>
     
-    <main>
-      <h1>Máster en Inteligencia Artificial</h1>
-      <p>
-        Con nuestro Máster en Inteligencia Artificial podrás:
-
-        <ul>
-          <li>Aprender a desarrollar en las ramas de la inteligencia artifical más demandadas del mercado.</li>
-          <li>Aprender con un sistema de enseñanza enfocado al mundo laboral.</li>
-          <li>Encontrar trabajo con nuestra bolsa de empleo de empresas Blockchain colaboradoras.</li>
+    <main class="main">
+      <article class="course-hero">
+        <h1 class="course-hero__title">Máster en Inteligencia Artificial</h1>
+        <p class="course-hero__intro">
+          Con nuestro Máster en Inteligencia Artificial podrás:
+        </p>
+        <ul class="course-features">
+          <li class="course-features__item">Aprender a desarrollar en las ramas de la inteligencia artifical más demandadas del mercado.</li>
+          <li class="course-features__item">Aprender con un sistema de enseñanza enfocado al mundo laboral.</li>
+          <li class="course-features__item">Encontrar trabajo con nuestra bolsa de empleo de empresas Blockchain colaboradoras.</li>
         </ul>
-      </p>
+      </article>
       
-      <iframe 
-        width="560" 
-        height="315" 
-        src="https://www.youtube.com/embed/6NOKhDx-WBU?si=P1OqGkqmeB4uS0Tc" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen>
-      </iframe>
+      <section class="course-video">
+        <div class="course-video__container">
+          <iframe class="course-video__iframe" 
+          src="https://www.youtube.com/embed/6NOKhDx-WBU?si=P1OqGkqmeB4uS0Tc" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+          </iframe>
+        </div>
+      </section>
 
-      <p><a target="_blank" href="https://calendly.com/d/4r7-jck-qx3">Agenda tu llamada</a></p>
-
+      <section class="course-cta">
+        <a class="course-cta__link" href="https://calendly.com/d/yr6-m6b-srg" target="_blank">
+          <!-- Icono de calendario-->
+          <svg class="course-cta__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z" fill="currentColor"/>
+          </svg>
+          Agenda tu llamada
+        </a>
+      </section>
     </main>
 
     <footer class="footer">
