@@ -7,6 +7,7 @@
     background-image: linear-gradient(to right, $yellow, $blue);
     padding: 16px;
     margin-bottom: $mb-1;
+    gap: 20px;
 
     &__nav {
         align-self: start;
@@ -19,13 +20,23 @@
             align-items: center;
             padding: 0;
             margin: 0;
-            gap: 10px 40px;
+            gap: 20px 40px;
+            backface-visibility: hidden; // Suaviza transiciones
 
             a {
+                min-width: max-content; // Evita saltos en items cortos
                 @include link();
+            }
+
+            .active {
+                font-weight: bold;
+                text-decoration: underline;
+                text-underline-offset: 10px;
+                text-decoration-thickness: 3px;
+                &:hover {
+                    text-shadow: none;
+                }
             }
         }
     }
-
-    
 }

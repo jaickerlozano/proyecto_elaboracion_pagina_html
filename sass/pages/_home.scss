@@ -2,7 +2,6 @@
 
 .page-home {
 
-
     .main {
 
         &-text {
@@ -34,6 +33,10 @@
         &__specializations {
             margin-bottom: $mb-1;
 
+            &-title {
+                text-align: center;
+            }
+
             &-items {
                 @include flex-column-center();
                 margin-bottom: $mb-2;
@@ -61,6 +64,10 @@
             margin-bottom: $mb-1;
 
             &-title {
+                text-align: center;
+            }
+
+            &-subtitle {
                 @include background-heading();
             }
 

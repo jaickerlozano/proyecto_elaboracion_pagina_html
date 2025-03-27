@@ -38,48 +38,91 @@
   
 </head>
 
-<body>
-    <header>
+<body class="page-noticia-1">
+
+    <header class="header">
       <figure>
-        <img src="../img/logo-conquerblocks-color.png" alt="Logotipo de Conquer Blocks" width="200" height="40">
+        <a class="header__logo" href="./index.html"><img src="../img/logo-conquerblocks-color.png" alt="Logotipo de Conquer Blocks" width="200" height="40"></a>
       </figure>
-      <nav>
+
+      <nav class="header__nav">
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../quienes-somos.html">Quiénes somos</a></li>
-          <li><a href="../cursos.html">Cursos</a></li>
-          <li><a href="../blog.html">Blog</a></li>
-          <li><a href="../registro.html">Registro</a></li>
-          <li><a href="../login.html">Login</a></li>
-          <li><a href="../contacto.html">Contacto</a></li>
+          <li class="header__item"><a href="../index.html">Home</a></li>
+          <li class="header__item"><a href="../quienes-somos.html">Quiénes somos</a></li>
+          <li class="header__item"><a href="../cursos.html">Cursos</a></li>
+          <li class="header__item"><a class="active" href="../blog.html">Blog</a></li>
+          <li class="header__item"><a href="../registro.html">Registro</a></li>
+          <li class="header__item"><a href="../login.html">Login</a></li>
+          <li class="header__item"><a href="../contacto.html">Contacto</a></li>
         </ul>
       </nav>
-      <hr />
     </header>
     
-    <main>
-      <section>
-        <article>
-          <h2>Por qué el Desarrollo Full Stack es un trabajo de alta demanda en la actualidad</h2>
-          <p>A medida que la tecnología se expande y evoluciona rápidamente, muchas empresas buscan desarrolladores 
-            con talento que sean capaces de comprender y trabajar tanto en el front-end como en el back-end, dominando 
-            cualquier aspecto del proceso de desarrollo y creando un producto final completo. Estos desarrolladores son 
-            los llamados Full Stack developers y su empleabilidad está cada vez más en aumento. 
-          </p>
-          <p>
-            Según datos del Informe de InfoJobs sobre las Perspectivas de Contratación de las Empresas, el puesto de 
-            desarrollador de software contó tan solo en el mes de julio con más de 5.000 vacantes. Además de esta alta 
-            demanda en el mercado, hay que sumar las facilidades para aprender la profesión (bootcamps o formaciones intensivas, 
-            módulos y carreras), el alto nivel de contratación y los atractivos salarios.
-          </p>
+    <main class="main">
+      <section class="main__article-section">
+        <article class="article">
+          <header class="article__header">
+            <h2 class="article__title">Por qué el Desarrollo Full Stack es un trabajo de alta demanda en la actualidad</h2>
+            <div class="article__meta">
+              <span class="article__date">Publicado: 15/03/2024</span>
+              <span class="article__author">Por: Equipo Conquer Blocks</span>
+            </div>
+          </header>
+          
+          <div class="article__content">
+            <p class="article__paragraph">
+              A medida que la tecnología se expande y evoluciona rápidamente, muchas empresas buscan desarrolladores 
+              con talento que sean capaces de comprender y trabajar tanto en el front-end como en el back-end, dominando 
+              cualquier aspecto del proceso de desarrollo y creando un producto final completo. Estos desarrolladores son 
+              los llamados Full Stack developers y su empleabilidad está cada vez más en aumento. 
+            </p>
+            
+            <figure class="article__figure">
+              <img class="article__image" src="../img/blog/grafico-demanda-full-stack.jpg" alt="Gráfico de demanda de desarrolladores Full Stack">
+              <figcaption class="article__caption">Demanda laboral de desarrolladores Full Stack en 2024</figcaption>
+            </figure>
+            
+            <p class="article__paragraph">
+              Según datos del Informe de InfoJobs sobre las Perspectivas de Contratación de las Empresas, el puesto de 
+              desarrollador de software contó tan solo en el mes de julio con más de 5.000 vacantes. Además de esta alta 
+              demanda en el mercado, hay que sumar las facilidades para aprender la profesión (bootcamps o formaciones intensivas, 
+              módulos y carreras), el alto nivel de contratación y los atractivos salarios.
+            </p>
+            
+            <blockquote class="article__quote">
+              "El desarrollo Full Stack representa el 68% de las ofertas laborales en tecnología según nuestro último reporte"
+              <cite class="article__cite">- Informe Anual de Mercado Laboral TI</cite>
+            </blockquote>
+          </div>
+
+          <footer class="article__footer">
+            <div class="article__tags">
+              <span class="article__tag">#FullStack</span>
+              <span class="article__tag">#DesarrolloWeb</span>
+              <span class="article__tag">#EmpleoTI</span>
+            </div>
+            <div class="article__actions">
+              <button class="article__action-button article__action-button--share">
+                <svg class="article__action-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" fill="currentColor"/>
+                </svg>
+                Compartir
+              </button>
+              <a class="article__back-link" href="../blog.html">← Volver al blog</a>
+            </div>
+          </footer>
         </article>
       </section>
     </main>
 
-    <footer>
-      <p>© 2024 - Todos los derechos reservados - <a href="aviso-legal.html">Aviso Legal</a></p>
+    <footer class="footer">
+      <p class="footer__copyright">© 2024 - Todos los derechos reservados</p>
+      <nav class="footer__nav">
+        <a class="footer__link" href="aviso-legal.html">Aviso legal</a>
+      </nav>
     </footer>
-  
+
+    <script type="module" src="/main.js"></script>
 </body>
 
 </html>

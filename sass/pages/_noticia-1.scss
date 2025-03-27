@@ -1,0 +1,99 @@
+@use '../abstracts/abstracts' as *;
+
+.page-noticia-1 {
+
+    .article {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 16px;
+        
+        &__meta {
+          color: #7f8c8d;
+          margin-bottom: $mb-2;
+          display: flex;
+          gap: 1rem;
+        }
+        
+        &__paragraph {
+          margin-bottom: $mb-2;
+          text-align: justify;
+        }
+        
+        &__figure {
+          margin: 2rem 0;
+          text-align: center;
+        }
+        
+        &__image {
+          max-width: 100%;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        &__caption {
+          font-style: italic;
+          color: #7f8c8d;
+          margin-top: 0.5rem;
+        }
+        
+        &__quote {
+          border-left: 4px solid $blue;
+          padding-left: 1rem;
+          margin: 2rem 0;
+          color: $dark-grey;
+          font-size: 1.1rem;
+        }
+        
+        &__tags {
+          display: flex;
+          gap: 0.5rem;
+          margin-bottom: 1rem;
+          flex-wrap: wrap;
+        }
+        
+        &__tag {
+          background: $light-white;
+          padding: 0.3rem 0.8rem;
+          border-radius: 20px;
+          font-size: 0.8rem;
+        }
+        
+        &__back-link {
+          color: $blue;
+          text-decoration: none;
+          font-weight: 500;
+          
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        &__actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2rem;
+        }
+    
+        &__action-button {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: none;
+        border: 1px solid #ddd;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s;
+        
+            &:hover {
+                background: #f1f1f1;
+            }
+            
+            &--share {
+                color: $blue;
+                border-color: $blue;
+            }
+        }
+    }
+}

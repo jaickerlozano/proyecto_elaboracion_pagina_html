@@ -40,9 +40,15 @@
 
 @mixin link() {
   display: inline-block;
+  text-decoration: none;
   color: var.$dark-blue;
+  transition: all 0.2s ease;
+
   &:hover {
-    text-underline-offset: 5px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+    text-shadow: 0 0 0.5px currentColor;
   }  
 }
 
@@ -59,7 +65,7 @@
   font-weight: 700;
   padding: 10px 16px;
   background-color: var.$blue;
-  color: var.$dark-blue;
+  color: var.$white;
   border-radius: 16px;
   transition-duration: 0.5s;
   &:hover {
@@ -87,7 +93,7 @@
 }
 
 @mixin boxshadow-img() {
-  box-shadow: 1px 1px 50px var.$dark-blue;
+  box-shadow: 4px 5px 8px var.$dark-blue;
   margin-bottom: 10px;
 }
 
