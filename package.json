@@ -11,7 +11,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "copy-dist-to-docs": "rm -rf docs && cp -r dist docs"
+    "copy-dist-to-docs": "rm -rf docs && cp -r dist docs",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
