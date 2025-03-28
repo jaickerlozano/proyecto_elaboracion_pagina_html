@@ -40,7 +40,7 @@
     }
 }
 
-// Media query tablet
+// Media query for tablet
 
 @include breakpoint(tablet) {
  .header{
@@ -51,7 +51,7 @@
     &__nav {
         ul {
             flex-wrap: nowrap;
-            gap: 20px;
+            gap: 10px;
         }
     }
 

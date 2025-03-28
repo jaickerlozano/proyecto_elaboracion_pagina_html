@@ -27,6 +27,7 @@
 
             &-title {
                 @include background-heading();
+                text-align: center;
             }
         }
 
@@ -44,6 +45,7 @@
 
             &-subtitle {
                 @include background-heading();
+                text-align: center;
             }
 
             &-text {
@@ -69,10 +71,38 @@
 
             &-subtitle {
                 @include background-heading();
+                text-align: center;
             }
 
             &-text {
                 margin-bottom: $mb-2;
+            }
+        }
+    }
+}
+
+// Media query for tablet
+
+@include breakpoint(tablet) {
+    .page-home {
+        .main {
+            &__intro {
+                flex-direction: row;
+
+                &-title, &-text {
+                    text-align: start;
+                    padding: 0;
+                }
+            }
+
+            &__discover{
+                margin-bottom: $mb-1;
+            }
+
+            &__news {
+                &-subtitle {
+                    text-align: center;
+                }
             }
         }
     }

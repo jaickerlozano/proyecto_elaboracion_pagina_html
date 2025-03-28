@@ -1,4 +1,4 @@
-@use '../abstracts/variables' as *;
+@use '../abstracts/abstracts' as *;
 
 html * {
     font-family: $font-family;
@@ -7,4 +7,7 @@ html * {
 body {
     overflow-x: hidden;
     font-size: 14px;
+    @include breakpoint(tablet) {
+        font-size: 16px;
+    }
 } 
