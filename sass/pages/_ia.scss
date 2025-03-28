@@ -63,3 +63,13 @@
         }
     }
 }
+
+// Media query for tablet 
+@include breakpoint(tablet) {
+    .page-ia {
+        .course-video {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
