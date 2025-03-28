@@ -5,9 +5,13 @@
         text-align: center;
     }
 
+    .contact-form {  
+        width: 100%;
+    }
     .form {
         font-weight: 600;
         color: $dark-blue;
+        box-sizing: border-box;
 
         &__intro {
             text-align: center;
@@ -40,6 +44,14 @@
             background-color: $light-grey;
             color: $grey;
             font-weight: 600;
+        }
+
+        &__file {
+            width: 100%; /* Ocupa todo el ancho disponible */
+            //max-width: 100%; /* Previene que se salga del contenedor */
+            // overflow: hidden; /* Oculta el contenido que sobresalga */
+            //text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es muy largo */
+            //white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
         }
 
         &__textarea {
