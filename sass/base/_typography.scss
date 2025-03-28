@@ -18,6 +18,10 @@ h3 {
     @include styles(700, 18px, 22px, 0px);
 }
 
+h4 {
+    @include styles(700, 16px, 20px, 0px);
+}
+
 p {
     @include styles(500, 16px, 20px, 0px);
     color: $grey;
@@ -32,7 +36,7 @@ p {
     }
     
     h2 {
-        @include styles(700, 35px, 43px, -2.05px);
+        @include styles(700, 35px, 43px, -0.5px);
     }
     
     h3 {
@@ -40,7 +44,7 @@ p {
     }
     
     h4 {
-        @include styles(700, 48px, 56px, -1.5px);
+        @include styles(700, 22px, 26px, 0px);
     }
     
     p {
