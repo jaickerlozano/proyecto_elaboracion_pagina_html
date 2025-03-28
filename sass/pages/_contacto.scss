@@ -106,5 +106,14 @@
           margin: 0;
         }
     }
+}
 
+// Media query for tablet
+@include breakpoint(tablet) {
+    .page-contacto {
+        .form {
+            padding-left: 130px;
+            padding-right: 130px;
+        }
+    }
 }

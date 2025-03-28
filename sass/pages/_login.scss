@@ -40,3 +40,13 @@
         }
     }
 }
+
+// Media query for tablet
+@include breakpoint(tablet) {
+    .page-login {
+        .form {
+            padding-left: 130px;
+            padding-right: 130px;
+        }
+    }
+}
