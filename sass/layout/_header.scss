@@ -25,6 +25,7 @@
             a {
                 min-width: max-content; // Evita saltos en items cortos
                 @include link();
+                text-transform: capitalize;
             }
 
             .active {

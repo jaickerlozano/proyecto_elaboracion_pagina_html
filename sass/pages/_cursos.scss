@@ -9,6 +9,7 @@
 
         &__course-list {
             list-style-position: inside; // Posiciona la lista dentro del marco
+            margin-left: 16px;
 
             &-item {
                 margin-bottom: 10px;
@@ -65,6 +66,42 @@
                   
                 .icon--cybersecurity {
                   color: #FF5722; /* Naranja seguridad */
+                }
+            }
+        }
+    }
+}
+
+// Media query for tablet
+
+@include breakpoint(tablet) {
+    .page-cursos {
+        .main {
+
+            &__courses-grid {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .course-card {
+                width: 50%; // Define el tamaño del contenedor article para poder tener 2 por fila
+                display: flex;
+                flex-direction: column;
+
+                &__title {
+                    font-size: 22px;
+                    line-height: 26px;
+                }
+
+                &__content {
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1; //Permite que el contenedor crezca lo que falta dentro del contenedor que se encuentra
+
+                    .btn-cursos {
+                        margin-top: auto;
+                        align-self: baseline; // Con esto los botones no me crecen más del tamaño qu está definido
+                    }
                 }
             }
         }
