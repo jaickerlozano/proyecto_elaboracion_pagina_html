@@ -40,7 +40,7 @@
   
 </head>
 
-<body>
+<body class="page-aviso-legal">
 
     <header class="header">
       <figure>
@@ -49,29 +49,39 @@
 
       <nav class="header__nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="quienes-somos.html">Quiénes somos</a></li>
-          <li><a href="cursos.html">Cursos</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="registro.html">Registro</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a class="active" href="contacto.html">Contacto</a></li>
+          <li class="header__item"><a href="index.html">Home</a></li>
+          <li class="header__item"><a href="quienes-somos.html">Quiénes somos</a></li>
+          <li class="header__item"><a href="cursos.html">Cursos</a></li>
+          <li class="header__item"><a href="blog.html">Blog</a></li>
+          <li class="header__item"><a href="registro.html">Registro</a></li>
+          <li class="header__item"><a href="login.html">Login</a></li>
+          <li class="header__item"><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
-    
-    <main>
-      <h1>Aviso legal</h1>
-      <p>Actualizado por última vez el 20 de Enero de 2023.</p>
-      <p>Información en cumplimiento de la normativa de protección de datos personales a nivel internacional.</p>
-      <p>Empresa, número NO8376Al en Emiratos Árbes Unidos.</p>
-      <p>Dirección postal : Al Shmookh Business Center M 1003, One UAQ, UAQ Free Trade Zone, Umm Al Quwain, U.A.E.</p>
-      <p>Dirección de correo electrónico de contacto: enrique.romero@conquercrypto.com</p>
-      <p>Nuestra página web: www.conquercrypto.io</p>
+      
+    <main class="main legal">
+      <div class="legal__header">
+        <h1 class="legal__title">Aviso legal</h1>
+        <p class="legal__parrafo">Actualizado por última vez el 20 de Enero de 2023.</p>
+        <p class="legal__parrafo">Información en cumplimiento de la normativa de protección de datos personales a nivel internacional.</p>         
+      </div>
+
+      <div class="legal__content">        
+        <h2 class="legal__subtitle">Información de la Empresa</h2>
+        <p class="legal__parrafo">Empresa, número NO8376Al en Emiratos Árbes Unidos.</p>
+        <p class="legal__parrafo">Dirección postal : Al Shmookh Business Center M 1003, One UAQ, UAQ Free Trade Zone, Umm Al Quwain, U.A.E.</p>
+        <p class="legal__parrafo">Dirección de correo electrónico de contacto: enrique.romero@conquercrypto.com</p>
+        <p class="legal__parrafo">Nuestra página web: www.conquercrypto.io</p>             
+      </div>
+
     </main>
 
-    <footer>
-      <p>© 2024 - Todos los derechos reservados - <a href="aviso-legal.html">Aviso Legal</a></p>
+    <footer class="footer">
+      <p class="footer__copyright">© 2024 - Todos los derechos reservados</p>
+      <nav class="footer__nav">
+        <a class="footer__link" href="aviso-legal.html">Aviso legal</a>
+      </nav>
     </footer>
     
     <script type="module" src="/main.js"></script>

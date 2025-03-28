@@ -1,0 +1,12 @@
+@use '../abstracts/abstracts' as *;
+
+.page-aviso-legal {
+
+    .main {
+        .legal {
+            &__title, &__subtitle {
+                text-transform: capitalize;
+            }
+        }
+    }
+}
