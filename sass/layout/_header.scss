@@ -10,7 +10,6 @@
     gap: 20px;
 
     &__nav {
-        align-self: start;
 
         ul {
             list-style: none;
@@ -39,4 +38,22 @@
             }
         }
     }
+}
+
+// Media query tablet
+
+@include breakpoint(tablet) {
+ .header{
+    flex-direction: row;
+    padding: 32px;
+    justify-content: space-between;
+
+    &__nav {
+        ul {
+            flex-wrap: nowrap;
+            gap: 20px;
+        }
+    }
+
+ }   
 }
