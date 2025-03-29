@@ -44,17 +44,31 @@
 // Media query for tablet
 
 @include breakpoint(tablet) {
- .header{
-    flex-direction: row;
-    padding: 32px;
-    justify-content: space-between;
+    .header {
+        flex-direction: row;
+        padding: 32px;
+        justify-content: space-between;
 
-    &__nav {
-        ul {
-            flex-wrap: nowrap;
-            gap: 10px;
+        &__nav {
+            ul {
+                flex-wrap: nowrap;
+                gap: 10px;
+            }
+        }
+    }   
+}
+
+// Media query for tablethorizontal
+
+@include breakpoint(tablethorizontal) {
+    .header {
+        padding: 48px;
+        margin-bottom: 80px;
+
+        &__nav {
+            ul { 
+                gap: 24px;
+            }
         }
     }
-
- }   
 }

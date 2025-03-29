@@ -107,3 +107,72 @@
         }
     }
 }
+
+// Media query for tablethorizontal
+
+@include breakpoint(tablethorizontal) {
+    .page-home {
+        .main {
+            &__intro {
+                gap: 10px;
+
+                &-container {
+                    width: 60%;
+                }
+
+                &-text {
+                    width: 90%;
+                }
+
+                &-img {
+                    width: 100%;
+                }
+            }
+
+            &__discover{
+                margin-left: auto;
+                margin-right: auto;
+                width: 63%;
+            }
+
+            &__specializations {
+                &-articles-container {
+                    display: flex;
+                    justify-content: space-around;
+                }
+
+                &-items {
+                    margin: 0;
+                    align-items: center;
+                    width: 40%;
+
+                    &:first-child {
+                        p:last-of-type {
+                            margin-top: auto;
+                            margin-bottom: 0;
+                        }
+                        figure {
+                            margin-top: 35px;
+                        }
+                    }
+                }
+            }
+
+            &__news {
+                
+                &-container-articles {
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+
+            &__items {
+                width: 40%;
+            }
+
+            &__text {
+                text-align: center;
+            }
+        }
+    }
+}
