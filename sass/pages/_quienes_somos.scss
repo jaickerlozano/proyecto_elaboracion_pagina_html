@@ -4,7 +4,7 @@
     background-image: linear-gradient($white, $light-white);
 
     .main {
-        &__about {
+        &__logo {
             margin-bottom: $mb-1;
 
             &-figure {
@@ -47,6 +47,34 @@
             color: $blue;
             font-weight: 400;
         }
+    }
+}
 
+// Media query for tablet
+@include breakpoint(tablet) {
+    .page-quienes-somos {
+        .main {
+
+            &__logo-figure {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            &__team {
+                
+                &--member-container {
+                    padding-left: 130px;
+                    padding-right: 130px;
+                }
+
+                &-figure {
+                    display: flex;
+                    justify-content: center;
+                }
+                &-img {
+                    width: 200px;
+                }
+            }
+        }
     }
 }
