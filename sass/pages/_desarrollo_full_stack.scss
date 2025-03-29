@@ -66,7 +66,7 @@
 
         &__actions {
             display: flex;
-            gap: 20px;
+            gap: 64px;
 
             &--back-link {
                 color: $blue;
@@ -87,6 +87,11 @@
         .course-video {
             margin-left: auto;
             margin-right: auto;
+        }
+        .course-cta {
+            &__actions {
+                gap: 260px;
+            }
         }
     }
 }

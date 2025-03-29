@@ -89,5 +89,12 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        .course-cta {
+            &__actions {
+                gap: 260px;
+            }
+        }
     }
 }
+
