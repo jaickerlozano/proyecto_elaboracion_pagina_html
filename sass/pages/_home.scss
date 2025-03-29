@@ -176,3 +176,15 @@
         }
     }
 }
+
+// Media query for desktop
+
+@include breakpoint(desktop) {
+    .page-home {
+        .main {
+            &__intro-container {
+                width: 55%;
+            }
+        }
+    }
+}

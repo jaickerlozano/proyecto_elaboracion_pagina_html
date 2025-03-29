@@ -23,6 +23,7 @@
             backface-visibility: hidden; // Suaviza transiciones
 
             a {
+                display: inline-block;
                 min-width: max-content; // Evita saltos en items cortos
                 @include link();
                 text-transform: capitalize;
@@ -68,6 +69,21 @@
         &__nav {
             ul { 
                 gap: 24px;
+            }
+        }
+    }
+}
+
+// Media query for desktop
+
+@include breakpoint(desktop) {
+    .header {
+        padding: 48px 80px;
+        margin-bottom: 80px;
+
+        &__nav {
+            ul { 
+                gap: 30px;
             }
         }
     }

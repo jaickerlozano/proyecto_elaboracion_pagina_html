@@ -96,14 +96,3 @@
         }
     }
 }
-
-// Media query for tablet horizontal 
-@include breakpoint(tablet) {
-    .page-desarrollo-full-stack {
-        .course-cta {
-            &__actions {
-                gap: 260px;
-            }
-        }
-    }
-}

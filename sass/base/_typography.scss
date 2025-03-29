@@ -69,8 +69,12 @@ p {
     h4 {
         @include styles(700, 18px, 22px, 0px);
     }
-    
-    p {
-        @include styles(500, 18px, 28px, 0px);
+}
+
+// Media query for desktop
+
+@include breakpoint(desktop) {
+    h1 {
+        @include styles(700, 60px, 62px, -1px);
     }
 }
