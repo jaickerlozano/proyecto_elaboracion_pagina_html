@@ -81,10 +81,11 @@
             &__courses-grid {
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: space-between;
             }
 
             .course-card {
-                width: 50%; // Define el tamaño del contenedor article para poder tener 2 por fila
+                width: 47%; // Define el tamaño del contenedor article para poder tener 2 por fila
                 display: flex;
                 flex-direction: column;
 
@@ -102,6 +103,24 @@
                         margin-top: auto;
                         align-self: baseline; // Con esto los botones no me crecen más del tamaño qu está definido
                     }
+                }
+            }
+        }
+    }
+}
+
+// Media query for desktop
+
+@include breakpoint(desktop) {
+    .page-cursos {
+
+        .main {
+            .course-card {
+                width: 24%;
+
+                &__title {
+                    font-size: 18px;
+                    line-height: 22px;
                 }
             }
         }
