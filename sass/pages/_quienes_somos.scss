@@ -81,3 +81,27 @@
         }
     }
 }
+
+// Media query for desktop
+
+@include breakpoint(desktop) {
+    .page-quienes-somos {
+        .main {
+
+            &__logo-figure {
+                display: flex;
+                justify-content: center;
+            }
+            &__logo-img {
+                width: 75%;
+            }
+
+            &__team {
+
+                &-member {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
