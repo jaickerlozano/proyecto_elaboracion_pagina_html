@@ -85,3 +85,13 @@
         }
     }
 }
+
+// Media query for tablet horizontal
+@include breakpoint(tablethorizontal) {
+    .page-registro {
+        .form {
+            padding-left: 220px;
+            padding-right: 220px;
+        }
+    }
+}
