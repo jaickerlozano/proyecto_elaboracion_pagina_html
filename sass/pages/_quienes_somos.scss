@@ -63,11 +63,12 @@
                 
                 &--member-container {
                     display: flex;
-                    justify-content: center;
+                    justify-content: space-between;
                 }
 
                 &-member {
-                    width: 34%;
+                    width: 31%;
+                    padding: 20px 0;
                 }
 
                 &-figure {
