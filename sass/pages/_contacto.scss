@@ -127,3 +127,27 @@
         }
     }
 }
+
+// Media query for desktop
+@include breakpoint(desktop) {
+    .page-contacto {
+        .main {
+            &__contact-container {
+                flex-direction: row;
+                align-items: start;
+            }
+        }
+
+        .contact-map {
+            width: 100%;
+
+            &__title {
+                text-align: center;
+            }
+        }
+        .form {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+    }
+}

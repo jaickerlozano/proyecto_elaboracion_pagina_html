@@ -95,3 +95,23 @@
         }
     }
 }
+
+// Media query for desktop
+@include breakpoint(desktop) {
+    .page-registro {
+        .form {
+            padding-left: 330px;
+            padding-right: 330px;
+        }
+    }
+}
+
+// Media query for desktop
+@include breakpoint(desktopxl) {
+    .page-registro {
+        .form {
+            padding-left: 360px;
+            padding-right: 360px;
+        }
+    }
+}

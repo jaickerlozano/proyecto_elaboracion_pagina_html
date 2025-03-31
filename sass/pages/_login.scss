@@ -60,3 +60,24 @@
         }
     }
 }
+
+// Media query for desktop
+@include breakpoint(desktop) {
+    .page-login {
+
+        .form {
+            padding-left: 330px;
+            padding-right: 330px;
+        }
+    }
+}
+
+// Media query for desktop
+@include breakpoint(desktopxl) {
+    .page-login {
+        .form {
+            padding-left: 360px;
+            padding-right: 360px;
+        }
+    }
+}

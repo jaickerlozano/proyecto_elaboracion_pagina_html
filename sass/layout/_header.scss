@@ -88,3 +88,18 @@
         }
     }
 }
+
+// Media query for desktopxl
+
+@include breakpoint(desktopxl) {
+    .header {
+        padding: 48px 160px;
+        margin-bottom: 80px;
+
+        &__nav {
+            ul { 
+                gap: 30px;
+            }
+        }
+    }
+}
