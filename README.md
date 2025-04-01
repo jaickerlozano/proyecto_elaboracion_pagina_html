@@ -1,6 +1,6 @@
 # ConquerBlocks - Plataforma Educativa
 
-![ConquerBlocks Preview](ruta-de-tu-imagen)
+![ConquerBlocks Preview](https://github.com/jaickerlozano/proyecto_elaboracion_pagina_html/blob/main/public/home_page.png)
 
 ## 🎓 Descripción
 
@@ -32,11 +32,11 @@
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tuusuario/conquerblocks.git
+   git clone https://github.com/jaickerlozano/proyecto_elaboracion_pagina_html.git
    ```
 2. Accede al directorio del proyecto:
    ```bash
-   cd conquerblocks
+   cd proyecto_elaboracion_pagina_html
    ```
 3. Instala las dependencias:
    ```bash
@@ -50,7 +50,14 @@
 
 ## 📸 Capturas de Pantalla
 
-_Aquí puedes incluir imágenes o GIFs mostrando la interfaz de la plataforma._
+### Home - Quiénes Somos
+![ConquerBlocks Home Preview](https://github.com/jaickerlozano/proyecto_elaboracion_pagina_html/blob/main/public/home.gif)
+
+### Cursos - Blog
+![ConquerBlocks Home Preview](https://github.com/jaickerlozano/proyecto_elaboracion_pagina_html/blob/main/public/cursos.gif)
+
+### Registro - Login - Contacto
+![ConquerBlocks Home Preview](https://github.com/jaickerlozano/proyecto_elaboracion_pagina_html/blob/main/public/registro.gif)
 
 ## ✨ Características
 
