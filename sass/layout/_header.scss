@@ -9,22 +9,54 @@
     margin-bottom: $mb-1;
     gap: 20px;
 
+    // Este es el contenedor del toggle
+    &__toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 25px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1001;
+        position: absolute;
+        top: 1.5rem;
+        right: 2rem;
+
+        // Estas son las barritas horizontales
+        span {
+            display: block;
+            height: 4px;
+            background-color: #333;
+            border-radius: 3px;
+        }
+    }
+
     &__nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
 
         ul {
             list-style: none;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            flex-direction: column;
+            gap: 1.5rem;
             align-items: center;
             padding: 0;
             margin: 0;
-            gap: 20px 40px;
-            backface-visibility: hidden; // Suaviza transiciones
 
             a {
                 display: inline-block;
-                min-width: max-content; // Evita saltos en items cortos
+                min-width: max-content;
                 @include link();
                 text-transform: capitalize;
             }
@@ -34,70 +66,85 @@
                 text-decoration: underline;
                 text-underline-offset: 10px;
                 text-decoration-thickness: 3px;
+
                 &:hover {
                     text-shadow: none;
                 }
             }
         }
+
+        &.active {
+            display: block;
+        }
     }
 }
 
-// Media query for tablet
+// === BREAKPOINTS PARA VERSIONES MAYORES ===
 
+// Tablet
 @include breakpoint(tablet) {
     .header {
         flex-direction: row;
         padding: 32px;
         justify-content: space-between;
 
+        &__toggle {
+            display: none; // Ocultamos el botón hamburguesa en pantallas grandes
+        }
+
         &__nav {
+            display: block;
+            position: static;
+            background: none;
+            box-shadow: none;
+            width: auto;
+            padding: 0;
+
             ul {
+                flex-direction: row;
                 flex-wrap: nowrap;
                 gap: 10px;
             }
         }
-    }   
+    }
 }
 
-// Media query for tablethorizontal
-
+// Tablethorizontal
 @include breakpoint(tablethorizontal) {
     .header {
         padding: 48px;
         margin-bottom: 80px;
 
         &__nav {
-            ul { 
+            ul {
                 gap: 24px;
             }
         }
     }
 }
 
-// Media query for desktop
-
+// Desktop
 @include breakpoint(desktop) {
     .header {
         padding: 48px 80px;
         margin-bottom: 80px;
 
         &__nav {
-            ul { 
+            ul {
                 gap: 30px;
             }
         }
     }
 }
 
-// Media query for desktopxl
-
+// Desktop XL
 @include breakpoint(desktopxl) {
     .header {
         padding: 48px 160px;
         margin-bottom: 80px;
 
         &__nav {
-            ul { 
+            ul {
                 gap: 30px;
             }
         }
